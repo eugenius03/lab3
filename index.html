@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">HOSTIT</a></div>
+            
+            <ul class="ulbar">
+                <div class="search-container">
+                    <div id="search-inner">
+                    <input id="search-input" autocomplete="off" placeholder="Search...">
+                    
+                    </div>
+                </div>
+                <li class="bar elem-navbar padding-left-elem"><a href="index.html">Home</a></li>
+                <li class="bar elem-navbar"><a href="news.html">News</a></li>
+                <li class="dropdown elem-navbar">
+                    <button class="more">
+                        <span>More</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-down">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </button>
+
+                    <div class="dropdown-content">
+                        <a href="#">Посилання 1</a>
+                        <a href="#">Посилання 2</a>
+                        <a href="#">Посилання 3</a>
+                    </div>
+                </li>
+                <li class="bar"><button class="signupbutton"><a class="signup" href="sign.html">Sign Up</a></button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div class="content">
+            <h1>Welcome page</h1>
+            <p>Choose your perfect hosting solution and launch your website today!</p>
+            
+            <div class="hosting-options">
+                <div class="option">
+                    <div class="icon">🚀</div>
+                    <div class="option-text">
+                        <h2>Shared Hosting</h2>
+                        <p>Affordable and easy to use</p>
+                    </div>
+                    <button class="option-button">Select</button>
+                </div>
+                <div class="option">
+                    <div class="icon">🌟</div>
+                    <div class="option-text">
+                        <h2>VPS Hosting</h2>
+                        <p>More power and flexibility</p>
+                    </div>
+                    <button class="option-button">Select</button>
+                </div>
+                <div class="option">
+                    <div class="icon">🏢</div>
+                    <div class="option-text">
+                        <h2>Dedicated Server</h2>
+                        <p>Ultimate performance and control</p>
+                    </div>
+                    <button class="option-button">Select</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-container">
+            <img src="img/slider-img.png" alt="Text" width="400" height="300">
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let upButton = document.getElementsByClassName("hoverbtn")[0];
+
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            upButton.style.display = "block";
+        }
+        else {
+            upButton.style.display = "none";
+        }
+    }
+
+</script>
+
+</html>
